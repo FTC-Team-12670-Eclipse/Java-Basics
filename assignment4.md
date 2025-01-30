@@ -1,0 +1,1 @@
+In continuity with assignment2 - How would you enforce each subclass of Pet to implement eat() and sleep() methods? Think about designing an interface contract that ensures all pet types follow these behaviors. Define an interface called PetBehavior and demonstrate how it fits with the Pet, Dog, and Bird classes.
