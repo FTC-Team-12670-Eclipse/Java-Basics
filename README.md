@@ -12,6 +12,7 @@ Meant to test your understanding. Don't write code that will actually run. Just 
 1. [Creating an object from a class](assignment1.md)
 2. [Superclass and Subclass](assignment2.md)
 3. [MusicLibrary example](assignment3.md)
+4. [Pet Behavior](assignment4.md)
 
 ## Fun
 - [The essence of good software engineering from Stanford CS106a course (5 minute video)](https://youtu.be/0LoKDDRlfZc?list=PLdSF_YgPvyiOAJZCcIz3tpHgXE7_G-GF4&t=2366)
