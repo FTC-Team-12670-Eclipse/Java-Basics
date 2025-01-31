@@ -1,0 +1,42 @@
+This is my solution to assingment 1
+
+Class called "Dog" with a name and breed attribute
+
+public class Dog {
+    String dogName;
+    String dogBreed;
+    
+    public Dog(String dogName, String dogBreed) {
+        this.dogName = dogName; //variable for dogs name
+        this.dogBreed = dogBreed; //variable for dogs breed
+    }
+    
+    public void setBreed(String dogBreed) {
+        this.dogBreed = dogBreed; //alows breed to be updated
+    }
+    
+    public void setName(String dogName) {
+        this.dogName = dogName; //allows name to be updated
+    }
+}
+
+Main Program
+
+public class Constructors {
+    public static void main (String [] args){
+        Dog myDog = new Dog("Sriman", "Poodle");
+        Dog yourDog = new Dog("Srihan", "Chimpanzee");
+
+        myDog.print();
+        yourDog.print();
+
+        myDog.setName("Vedant");
+        yourDog.setName("Billy");
+        myDog.setBreed("German Shepherd");
+        yourDog.setBreed("Labrador");
+
+        myDog.print();
+        yourDog.print();
+
+    }
+}
