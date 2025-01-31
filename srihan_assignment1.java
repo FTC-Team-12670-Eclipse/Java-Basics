@@ -5,8 +5,8 @@ class Dog {
 
     // Constructor
     Dog(String dogName, String dogBreed) {
-        name = dogName;
-        breed = dogBreed;
+        setName(dogName);
+        setBreed(dogBreed);
     }
 
     // Method
@@ -17,10 +17,16 @@ class Dog {
     void displayInfo() {
         System.out.println("Name: " + name + ", Breed: " + breed);
     }
+    void setName (String dogName){
+        name = dogName;
+    }
+    void setBreed (String dogBreed){
+        breed = dogBreed;
+    }
 }
 
 // The actual program
-public class Main {
+class srihan_assignment1{
     public static void main(String[] args) {
         // Create objects 
         Dog george = new Dog("George", "German Shepard");
