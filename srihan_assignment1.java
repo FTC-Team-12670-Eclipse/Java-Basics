@@ -14,8 +14,8 @@ class Dog {
         System.out.println(name + " says: BARK!");
     }
 
-    void displayInfo() {
-        System.out.println("Name: " + name + ", Breed: " + breed);
+    public String toString(){
+        return "Name: " + name + ", Breed: " + breed;
     }
     void setName (String dogName){
         name = dogName;
@@ -34,7 +34,8 @@ class srihan_assignment1{
 
         // Use the objects
         george.bark(); 
-        george.displayInfo();
-        jim.displayInfo(); 
+        System.out.println(george);
+        System.out.println(jim);
+
     }
 }
