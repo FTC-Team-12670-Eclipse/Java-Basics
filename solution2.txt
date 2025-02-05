@@ -1,0 +1,82 @@
+///Write a Java program to create a class called "Pet" with attributes for name, species, and age.
+///Create subclasses "Dog" and "Bird" that add specific attributes like favorite toy for dogs and wing span for birds.
+///Implement methods to display pet details and calculate the pet's age in human years.
+
+class Pet {
+    String name;
+    String species;
+    int age;
+
+ 
+    public Pet(String name, String species, int age) {
+        this.name = name;
+        this.species = species;
+        this.age = age;
+    }
+
+    public void Information() {
+        System.out.println("Hello and Greetings! I am a " + species + " and my name is " + name +  " and i am " + age + " years old!");
+    }
+
+    public int calculateHumanYears() {
+        return age; 
+    }
+}
+
+
+class Dog extends Pet {
+     String favoriteToy;
+
+
+    public Dog(String name,String species, int age, String favoriteToy) {
+        super(name, species, age);
+        this.favoriteToy = favoriteToy;
+    }
+
+    public void Information() {
+        super.Information();
+        System.out.println("Favorite Toy: " + favoriteToy);
+    }
+
+
+    public int calculateHumanYears() {
+        return age * 5;
+    }
+}
+
+
+class Bird extends Pet {
+    double wingSpan;
+
+    public Bird(String name,String species, int age, double wingSpan) {
+        super(name, species, age);
+        this.wingSpan = wingSpan;
+    }
+
+    public void Information() {
+        super.Information();
+        System.out.println("Wing Span: " + wingSpan );
+    }
+    public int calculateHumanYears() {
+        return age * 2; // 
+    }
+}
+
+ class Test {
+    public static void main(String[] args) {
+   
+        Dog dog = new Dog("Buddy","Dog", 3, "Chew Bone");
+        Bird bird = new Bird("Tweety","Bird", 2, 0.25);
+
+        System.out.println("Dog Details:");
+        dog.Information();
+        System.out.println("Dog's Age in Human Years: " + dog.calculateHumanYears());
+        System.out.println();
+
+        System.out.println("Bird Details:");
+        bird.Information();
+        System.out.println("Bird's Age in Human Years: " + bird.calculateHumanYears());
+        System.out.println("Bird's Age in Human Years: " + bird.wingSpan);
+    }
+}
+
