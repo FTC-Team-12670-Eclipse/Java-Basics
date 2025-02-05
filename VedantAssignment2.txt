@@ -1,0 +1,49 @@
+This is Vedant's solution to assignment 2
+
+Pet Class
+
+public class Pet {
+    String name;
+    int age;
+    String species;
+
+    public void displayDetails(){
+        System.out.println(this.name + " is " + this.age + " years old and is a " + species);
+    }
+    public int calculateAge(){
+        return this.age;
+    }
+}
+
+Dog Class 
+
+public class PetDog extends Pet{
+    String favoriteToy;
+
+    @Override
+    public void displayDetails() {
+        super.displayDetails();
+        System.out.println("My favorite toy is" + favoriteToy);
+    }
+    @Override
+    public int calculateAge(){
+        return this.age * 7;
+    }
+
+}
+
+Bird Class
+
+public class PetBird extends Pet{
+    String wingSpan;
+
+    @Override
+    public void displayDetails() {
+        super.displayDetails();
+        System.out.println("My wingspan is" + wingSpan);
+    }
+    @Override
+    public int calculateAge(){
+        return this.age * 9;
+    }
+}
